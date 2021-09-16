@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.15">
-<meta name="author" content="v0.1">
+<meta name="author" content="v0.2">
 <title>Εφαρμοσμένα Μαθηματικά</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -440,7 +440,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Εφαρμοσμένα Μαθηματικά</h1>
 <div class="details">
-<span id="author" class="author">v0.1</span><br>
+<span id="author" class="author">v0.2</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Περιεχόμενα</div>
@@ -449,6 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_παραπομπές">Παραπομπές</a></li>
 <li><a href="#_διαφορικές_εξισώσεις">Διαφορικές Εξισώσεις</a>
 <ul class="sectlevel2">
+<li><a href="#_index">Index</a></li>
 <li><a href="#_βασικές_έννοιες">Βασικές έννοιες</a>
 <ul class="sectlevel3">
 <li><a href="#_γραμμικές_διαφορικές_εξισώσεις">Γραμμικές Διαφορικές Εξισώσεις</a></li>
@@ -458,6 +459,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_πρώτης_τάξης">Πρώτης Τάξης</a>
 <ul class="sectlevel3">
 <li><a href="#_χωριζομένων_μεταβλητών">Χωριζομένων μεταβλητών</a></li>
+<li><a href="#_ομογενείς">Ομογενείς</a>
+<ul class="sectlevel4">
+<li><a href="#_εναλλακτική_μορφή">Εναλλακτική μορφή</a></li>
+</ul>
+</li>
+<li><a href="#_γραμμικές">Γραμμικές</a></li>
 </ul>
 </li>
 </ul>
@@ -511,6 +518,45 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_διαφορικές_εξισώσεις"><a class="anchor" href="#_διαφορικές_εξισώσεις"></a>Διαφορικές Εξισώσεις</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_index"><a class="anchor" href="#_index"></a>Index</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Μορφή</th>
+<th class="tableblock halign-left valign-top">Όνομα</th>
+<th class="tableblock halign-left valign-top">Παραδείγματα</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\(y'=g(x)h(y)\)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_χωριζομένων_μεταβλητών">Χωριζομένων μεταβλητών</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\(y'(x) = F(\frac{y}{x})\)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ομογενείς">Ομογενείς</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p35</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\(y'(x) = \frac{p(x,y)}{q(x,y)}\)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_εναλλακτική_μορφή">Ομογενείς εναλλακτική μορφή</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p36</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\(y'=-p(x)y+q(x)\)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_γραμμικές">Γραμμικές</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p39, p40</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
 <h3 id="_βασικές_έννοιες"><a class="anchor" href="#_βασικές_έννοιες"></a>Βασικές έννοιες</h3>
 <div class="dlist">
 <dl>
@@ -558,7 +604,8 @@ y^{(n)}=G(x,y,y',...,y^{(n-1)})
 <dl>
 <dt class="hdlist1">Πρόβλημα Αρχικών Τιμών</dt>
 <dd>
-<p>Σου δίνει αρχικές τιμές και πρέπει να βρεις τη <a href="#μερική-λύση">μερική λύση</a> χρησιμοποιώντας αυτές τις
+<p>Σου δίνει αρχικές τιμές και πρέπει να βρεις τη <a href="#μερική-λύση">μερική λύση</a> χρησιμοποιώντας
+αυτές τις
 τιμές.</p>
 </dd>
 </dl>
@@ -623,7 +670,8 @@ a_n(x)y^{(n)}(x) + a_{(n-1)}(x)y^{(n-1)}(x) + ... + a_0(x)y(x) = f(x)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">\(y'=x\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Πρώτης τάξης, γραμμική, μη ομεγενής, με σταθερούς συντελεστές</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Πρώτης τάξης, γραμμική, μη
+ομεγενής, με σταθερούς συντελεστές</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">\((y'')^4 + 3y(y')^5 + y^3y' = 3x\)</p></td>
@@ -752,11 +800,6 @@ G(x,y,c_1,...,c_n)=0
 </div>
 <div class="sect2">
 <h3 id="_πρώτης_τάξης"><a class="anchor" href="#_πρώτης_τάξης"></a>Πρώτης Τάξης</h3>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Δ.E. Πρώτης Τάξης</dt>
-</dl>
-</div>
 <div class="stemblock">
 <div class="content">
 \[\begin{equation}
@@ -766,11 +809,6 @@ y'(x) = f(x,y(x))
 </div>
 <div class="sect3">
 <h4 id="_χωριζομένων_μεταβλητών"><a class="anchor" href="#_χωριζομένων_μεταβλητών"></a>Χωριζομένων μεταβλητών</h4>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Δ.Ε. Χωριζομένων μεταβλητών ή διαχωρίσιμη Δ.Ε.</dt>
-</dl>
-</div>
 <div class="stemblock">
 <div class="content">
 \[\begin{equation}
@@ -842,10 +880,12 @@ y'=g(x)h(y)
 <div class="ulist">
 <ul>
 <li>
-<p>Οι ιδιάζουσες λύσεις \(y=ρ\) δεν αποτελούν λύσεις του Π.Α.Τ. αν δεν είναι ίσες με τις αρχικές τιμές που μας δίνονται.</p>
+<p>Οι ιδιάζουσες λύσεις \(y=ρ\) δεν αποτελούν λύσεις του Π.Α.Τ. αν δεν είναι
+ίσες με τις αρχικές τιμές που μας δίνονται.</p>
 </li>
 <li>
-<p>Η λύση ενός Π.Α.Τ. πρέπει να ορίζεται σε ένα διάστημα που περιέχει το αρχικό σημείο \(x_0\).</p>
+<p>Η λύση ενός Π.Α.Τ. πρέπει να ορίζεται σε ένα διάστημα που περιέχει το αρχικό
+σημείο \(x_0\).</p>
 </li>
 </ul>
 </div>
@@ -854,13 +894,85 @@ y'=g(x)h(y)
 </table>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_ομογενείς"><a class="anchor" href="#_ομογενείς"></a>Ομογενείς</h4>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+y'(x) = F(\frac{y}{x})
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Μεθοδολογία</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Θέσε \(u(x)=\frac{y(x)}{x}\)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Τότε \(y'(x) = u(x) + x \cdot u'(x)\)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Λύσε ως προς \(u'\), για να πάρεις την \(u\)</p>
+</li>
+<li>
+<p>Ξανακάνε την αρχική αντικατάσταση για να πάρεις την \(y\)</p>
+</li>
+</ol>
+</div>
+<div class="sect4">
+<h5 id="_εναλλακτική_μορφή"><a class="anchor" href="#_εναλλακτική_μορφή"></a>Εναλλακτική μορφή</h5>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+y'(x) = \frac{p(x,y)}{q(x,y}
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Μεθεδολογία</strong></p>
+</div>
+<div class="paragraph">
+<p>Μετετρεψέ την σε ομογενή.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_γραμμικές"><a class="anchor" href="#_γραμμικές"></a>Γραμμικές</h4>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+y'=-p(x)y+q(x)
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p>όπου οι \(p,q\) είναι συνεχείς στο ίδιο διάστημα.</p>
+</div>
+<div class="paragraph">
+<p><strong>Μεθοδολογία</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>\(y=e^{- \int p(x)dx} \left[ \int q(x)e^{\int p(x)dx}dx + c \right] \)</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-09-09 03:40:38 +0300
+Last updated 2021-09-16 23:12:46 +0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
